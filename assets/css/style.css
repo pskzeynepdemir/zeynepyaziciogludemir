@@ -5,7 +5,7 @@
 :root{
   --cream:#f2f0e9;
   --paper:#ffffff;
-  --ink:#141212;
+  --ink:#3a2e27;
   --pencil:#a1a0a0;
   --sage:#dde5d8;
   --ivory:#d7d7c8;
@@ -103,15 +103,18 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
 
 /* palette strip — imza renk şeridi */
-.palette-strip{display:flex;gap:10px;align-items:flex-end;height:120px;
-  margin:48px 0 0;flex-wrap:nowrap;overflow:hidden;}
-.palette-strip .sw{border-radius:12px;flex:0 0 auto;}
+.palette-strip{display:flex;gap:8px;align-items:flex-end;height:72px;
+  margin:40px 0 0;flex-wrap:nowrap;overflow:hidden;}
+.palette-strip .sw{border-radius:10px;flex:0 0 auto;}
 
 /* ---- work areas as swatches ---- */
 .work-list{border-top:1px solid var(--ink);margin-top:40px;}
 .work-item{display:grid;grid-template-columns:200px 1fr auto;gap:32px;
   align-items:center;padding:28px 0;border-bottom:1px solid var(--ink);}
 .work-swatch{border-radius:12px;height:96px;width:100%;}
+/* anasayfadaki çalışma alanı dikdörtgenlerini küçült */
+.work-list.compact .work-item{grid-template-columns:110px 1fr auto;}
+.work-list.compact .work-swatch{height:56px;}
 .work-item h3{font-family:var(--display);font-weight:500;font-size:24px;
   letter-spacing:-0.02em;text-transform:lowercase;margin-bottom:6px;
   display:flex;align-items:center;gap:10px;}
