@@ -102,11 +102,6 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
 .hero .lead{max-width:52ch;margin-bottom:32px;color:var(--ink);}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
 
-/* palette strip — imza renk şeridi */
-.palette-strip{display:flex;gap:8px;align-items:flex-end;height:72px;
-  margin:40px 0 0;flex-wrap:nowrap;overflow:hidden;}
-.palette-strip .sw{border-radius:10px;flex:0 0 auto;}
-
 /* ---- work areas as swatches ---- */
 .work-list{border-top:1px solid var(--ink);margin-top:40px;}
 .work-item{display:grid;grid-template-columns:200px 1fr auto;gap:32px;
@@ -221,7 +216,6 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
   .about{grid-template-columns:1fr;gap:28px;}
   .about-photo{max-width:320px;}
   .contact-grid{grid-template-columns:1fr;}
-  .palette-strip{height:80px;}
   .navlinks{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;
     gap:0;background:var(--cream);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);z-index:20;}
   .navlinks.open{display:flex;}
