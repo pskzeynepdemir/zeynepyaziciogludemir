@@ -91,6 +91,9 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
 
 /* ---- hero ---- */
 .hero{padding:90px 0 40px;}
+.hero-grid{display:grid;grid-template-columns:1.25fr 0.75fr;gap:48px;align-items:center;}
+.hero-motif{display:flex;justify-content:center;}
+.hero-motif svg{width:100%;max-width:260px;height:auto;}
 .hero .kicker{margin-bottom:24px;}
 .hero h1{font-family:var(--display);font-weight:500;letter-spacing:-0.03em;
   line-height:0.96;font-size:clamp(40px,7vw,72px);text-transform:lowercase;
@@ -109,7 +112,9 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
   align-items:center;padding:28px 0;border-bottom:1px solid var(--ink);}
 .work-swatch{border-radius:12px;height:96px;width:100%;}
 .work-item h3{font-family:var(--display);font-weight:500;font-size:24px;
-  letter-spacing:-0.02em;text-transform:lowercase;margin-bottom:6px;}
+  letter-spacing:-0.02em;text-transform:lowercase;margin-bottom:6px;
+  display:flex;align-items:center;gap:10px;}
+.work-item h3 svg{flex:0 0 auto;}
 .work-item p{font-size:15px;font-weight:300;color:var(--ink);max-width:46ch;}
 .work-link{font-weight:400;font-size:15px;white-space:nowrap;}
 
@@ -181,6 +186,7 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
 .cta-band p{font-size:16px;font-weight:300;max-width:52ch;margin:0 auto 26px;color:var(--cream);}
 .cta-band .btn-cta{background:var(--cream);color:var(--ink);border-color:var(--cream);}
 .cta-band .btn-cta:hover{background:var(--forest);color:var(--cream);border-color:var(--cream);}
+.cta-motif{display:flex;justify-content:center;margin-bottom:24px;}
 
 /* ---- footer ---- */
 .site-footer{border-top:1px solid var(--ink);padding:32px 0;margin-top:40px;}
@@ -200,6 +206,9 @@ a:hover{text-decoration:underline;text-underline-offset:2px;}
   .wrap{padding:0 22px;}
   .section{padding:48px 0;}
   .hero{padding:48px 0 24px;}
+  .hero-grid{grid-template-columns:1fr;gap:28px;}
+  .hero-motif{order:-1;justify-content:flex-start;}
+  .hero-motif svg{max-width:160px;}
   .work-item{grid-template-columns:1fr;gap:14px;padding:24px 0;}
   .work-swatch{height:72px;max-width:200px;}
   .work-link{order:3;}
