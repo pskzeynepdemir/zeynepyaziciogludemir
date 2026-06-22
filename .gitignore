@@ -1,0 +1,11 @@
+# OS / araç dosyaları
+.DS_Store
+**/.DS_Store
+.claude/
+
+# Kaynak dosyalar (yayınlanan sitede kullanılmaz, yerelde yedek olarak durur)
+/*.jpg
+/*.png
+/icerikler.html
+fotolarım/
+yazılarım/
