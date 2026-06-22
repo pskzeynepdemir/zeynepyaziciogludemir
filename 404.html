@@ -7,14 +7,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  /* 404 her URL derinliğinde sunulabildiği için stiller burada gömülü tutulur */
+  :root{--cream:#F7F1E8;--terracotta:#D98B73;--sage-dark:#5E6E53;--ink:#3A2E27;--ink-soft:#6B5E54;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--cream);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;gap:18px;padding:24px;}
+  .label{font-size:13px;color:var(--sage-dark);letter-spacing:.04em;}
+  h1{font-family:'Fraunces',serif;font-weight:500;font-size:34px;letter-spacing:-0.01em;}
+  p{color:var(--ink-soft);max-width:420px;}
+  .btn{font-size:14px;font-weight:600;padding:13px 24px;border-radius:30px;text-decoration:none;
+    display:inline-block;background:var(--terracotta);color:#fff;margin-top:6px;}
+</style>
 </head>
 <body>
-<div class="wrap" style="min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px;">
-  <span class="section-label">404</span>
-  <h1 style="font-size:34px;">Aradığınız sayfayı bulamadık</h1>
-  <p style="color:var(--ink-soft);max-width:420px;">Bağlantı taşınmış ya da hiç var olmamış olabilir. Ana sayfaya dönüp tekrar deneyebilirsiniz.</p>
-  <a href="/index.html" class="btn btn-primary">Ana sayfaya dön</a>
-</div>
+  <span class="label">404</span>
+  <h1>Aradığınız sayfayı bulamadık</h1>
+  <p>Bağlantı taşınmış ya da hiç var olmamış olabilir. Ana sayfaya dönüp tekrar deneyebilirsiniz.</p>
+  <a href="/" id="home" class="btn">Ana sayfaya dön</a>
+  <script>
+    // GitHub Pages proje sitesi alt yolda yayınlanır (/<repo>/...).
+    // Bu durumda "ana sayfa" linkini repo köküne çevir; özel alan adı/Cloudflare'de "/" kalır.
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean);
+      if (location.hostname.endsWith('github.io') && parts.length > 0) {
+        document.getElementById('home').href = '/' + parts[0] + '/';
+      }
+    })();
+  </script>
 </body>
 </html>
