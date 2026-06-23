@@ -51,7 +51,7 @@ a{color:var(--cream);text-decoration:none;}
   text-transform:uppercase;padding-bottom:3px;border-bottom:1px solid transparent;
   transition:border-color .3s ease,color .3s ease;
 }
-.navlinks a:hover{border-color:var(--cream);}
+.navlinks a:hover{border-color:var(--sienna);}
 .navlinks a.active{border-color:var(--sienna);}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;color:var(--cream);}
 
