@@ -6,33 +6,29 @@
 <title>Sayfa bulunamadı — Zeynep Yazıcıoğlu Demir</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@100;300;400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   /* 404 her URL derinliğinde sunulabildiği için stiller burada gömülü tutulur */
-  :root{--cream:#f2f0e9;--ink:#3a2e27;--pencil:#a1a0a0;--cobalt:#863a29;}
+  :root{--bg:#100904;--cream:#ffedd7;--cork:#40372e;--cork-fill:#382416;--sienna:#dc5000;--muted:#6c5f51;}
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{background:var(--cream);color:var(--ink);font-family:'Inter',ui-sans-serif,system-ui,sans-serif;
-    font-weight:300;line-height:1.5;min-height:100vh;display:flex;flex-direction:column;
-    align-items:center;justify-content:center;text-align:center;gap:18px;padding:24px;}
-  .kicker{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;
-    text-transform:uppercase;color:var(--pencil);}
-  h1{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:42px;letter-spacing:-0.03em;
-    line-height:0.96;text-transform:lowercase;}
-  p{color:var(--ink);max-width:44ch;}
-  .btn{font-family:'Inter',sans-serif;font-weight:400;font-size:15px;text-decoration:none;
-    background:var(--cobalt);color:#fff;border:1px solid var(--ink);border-radius:5px;
-    padding:14px 30px;margin-top:6px;display:inline-block;}
-  .strip{display:flex;gap:8px;margin-bottom:8px;}
-  .strip span{width:42px;height:42px;border-radius:12px;display:block;}
+  body{background:var(--bg);color:var(--cream);
+    font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,sans-serif;font-weight:400;
+    line-height:1.5;min-height:100vh;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;gap:20px;padding:24px;}
+  .kicker{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);}
+  h1{font-weight:500;font-size:clamp(34px,6vw,51px);line-height:0.92;}
+  p{color:var(--muted);max-width:46ch;}
+  .btn{font-family:inherit;font-weight:400;font-size:14px;letter-spacing:0.04em;text-decoration:none;
+    background:var(--cork-fill);color:var(--cream);border:1px solid var(--cork-fill);
+    border-radius:36px;padding:14px 28px;margin-top:6px;display:inline-block;
+    transition:border-color .3s ease;}
+  .btn:hover{border-color:var(--sienna);}
+  .dots{display:flex;gap:10px;margin-bottom:6px;}
+  .dots span{width:10px;height:10px;border-radius:50%;background:var(--sienna);display:block;}
 </style>
 </head>
 <body>
-  <div class="strip">
-    <span style="background:#3f593d;"></span>
-    <span style="background:#863a29;"></span>
-    <span style="background:#d8c660;"></span>
-    <span style="background:#a9ab72;"></span>
-  </div>
+  <div class="dots"><span></span><span></span><span></span></div>
   <span class="kicker">404</span>
   <h1>aradığınız sayfayı bulamadık</h1>
   <p>Bağlantı taşınmış ya da hiç var olmamış olabilir. Ana sayfaya dönüp tekrar deneyebilirsiniz.</p>
