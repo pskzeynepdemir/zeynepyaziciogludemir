@@ -140,7 +140,7 @@ a{color:var(--cream);text-decoration:none;}
 .about-photo{border:1px solid var(--cork-shadow);border-radius:12px;overflow:hidden;
   background:#0b0603;aspect-ratio:4/5;}
 .about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;}
-.about h2{font-weight:500;font-size:clamp(29px,4vw,41px);line-height:1;margin-bottom:20px;color:var(--cream);}
+.about h1,.about h2{font-weight:500;font-size:clamp(29px,4vw,41px);line-height:1;margin-bottom:20px;color:var(--cream);}
 .about p{font-size:16px;font-weight:400;line-height:1.7;color:var(--cream);margin-bottom:16px;}
 .about .kicker{margin-bottom:14px;}
 .about a{border-bottom:1px solid var(--sienna);padding-bottom:1px;}
